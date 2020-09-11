@@ -1,0 +1,21 @@
+
+body, html {
+  min-height: 100vh;
+  height: auto;
+  min-width: 100vw;
+  overflow: hidden;
+}
+
+* {
+  font-family: Lato;
+}
+
+div {
+  margin: 4px 0;
+}
+
+header, main {
+  max-width: 600px;
+  margin: auto;
+  display: block;
+}

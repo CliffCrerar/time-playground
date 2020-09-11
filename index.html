@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"
+		integrity="sha512-rmZcZsyhe0/MAjquhTgiUcb4d9knaFc7b5xAfju483gbEXTkeJRUMIPk6s3ySZMYUHEcjKbjLjyddGWMrNEvZg=="
+		crossorigin="anonymous"></script>
+
+	<style>
+		.grid {
+			display: grid;
+			margin-bottom: 20px;
+			grid-template-columns: auto auto
+		}
+
+		.g1 {
+			/* grid-gap: 100px; */
+		}
+
+		.text-center {
+			text-align: center;
+		}
+
+		.text-right {
+			text-align: right;
+		}
+	</style>
+</head>
+
+<body>
+  
+	<header id="">
+    <div id="header"></div>
+    <p>
+			<strong>CLOCK: </strong> <span id="time"></span></p>
+		<p>
+			<strong>UNIX TIME(MOMENT):</strong> <span id="moment-time"></span>
+			<br><small>This is how time is really seen by computers, it started on <strong> January 1st, 1970 at UTC</strong>, and will cease to exist on <strong>1 January 2038</strong> due to a 32 but overflow error.</small>
+		</p>
+    <hr>
+	</header>
+	
+	<main>
+		<div class="text-center">
+			<h3>Moment Time Features</h3>
+		</div>
+
+		<div class="grid">
+			<div>Selecte a date</div>
+			<div id="difOne" class="value text-right"></div>
+		</div>
+
+		<hr>
+
+		<div id="grid-1" class="grid g1">
+			<div>Selected Date:</div>
+			<div id="difTwo" class="value"></div>
+		</div>
+
+		<div id="grid-2" class="grid g2">
+
+		</div>
+
+	</main>
+  
+</body>
+
+</html>
